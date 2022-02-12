@@ -1,0 +1,36 @@
+h1, h3{
+    text-align: center;
+}
+h3{
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    margin-bottom: 0px;
+}
+.date p{
+    display: inline-grid;
+    text-align: right;
+    width: 50%;
+}
+.news p{
+    background-color: #CCCCCC;
+    margin-top: 0px;
+}
+.news p em{
+    text-align: right;
+}
+.news{
+    width: 70%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.billets{
+    display: flex;
+    flex-wrap: wrap;
+}
+em p div{
+    text-align: right;
+}
