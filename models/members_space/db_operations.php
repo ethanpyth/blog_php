@@ -1,5 +1,6 @@
 <?php
 
+//ajouts d'un membre
 function add_members($nickname, $pwd, $email): bool
 {
     global $bdd;
@@ -16,6 +17,7 @@ function add_members($nickname, $pwd, $email): bool
     return true;
 }
 
+//vérifier l'existence d'un membre dans la base de données
 function verify_members($nickname, $pwd): array
 {
     global $bdd;
