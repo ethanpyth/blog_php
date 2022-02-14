@@ -6,7 +6,6 @@ include_once('../../models/blog/get_billets.php');
 include_once('../billets.php');
 
 if (isset($_POST) && !empty($_POST)){
-
     if(delete_billets($_POST['idBillet'])){
         delete_comments_from_billets($_POST['idBillet']);
         header('Location: .');
@@ -16,9 +15,6 @@ if (isset($_POST) && !empty($_POST)){
 }
 
 $billets = get_billets(0, 5);
-/**
- * @return void
- */
 
 give_billet();
 
