@@ -1,5 +1,6 @@
 <?php
 
+//récupere les messages
 function message(): array
 {
     global $bdd;
@@ -9,6 +10,7 @@ function message(): array
     return $req->fetchAll();
 }
 
+//ajouter un message
 function add_message($nickname, $message): bool
 {
     global $bdd;
