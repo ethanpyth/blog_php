@@ -1,7 +1,5 @@
 <?php
 
-
-
 function add_members($nickname, $pwd, $email): bool
 {
     global $bdd;
