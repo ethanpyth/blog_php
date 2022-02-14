@@ -1,4 +1,6 @@
 <?php
+
+//afficher le billet
 function get_billets($offset, $limit): array
 {
     global $bdd;
@@ -12,7 +14,7 @@ function get_billets($offset, $limit): array
     return $req->fetchAll();
 }
 
-
+//recupérer les commentaires
 function get_commentaires($id_billet): array|bool
 {
     global $bdd;
@@ -32,6 +34,7 @@ function get_commentaires($id_billet): array|bool
     }
 }
 
+//ajouter les commentaires
 function add_comments($author, $id_billet, $comment): bool
 {
     global $bdd;
