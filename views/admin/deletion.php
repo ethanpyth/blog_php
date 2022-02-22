@@ -1,13 +1,14 @@
 <?php session_start(); ?>
 <!Doctype html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../views/blog/style.css">
+    <title>SUPPRESSION</title>
 </head>
 <body>
     <h1>Supprimer des billets</h1>
-    <form action="../../controllers/admin/deletion.php" method="post">
+    <form action="../../controllers/admin/deletion.php" method="post">0
         <?php
             for($index = 0; $index < count($billets) ; $index++)
             {

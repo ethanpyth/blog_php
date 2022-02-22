@@ -14,7 +14,7 @@ if (empty($data)){
 }else{
     //affichage des données de la table
     foreach ($data as $datum){
-           echo '<p><strong>' . htmlspecialchars($datum['nickname']) . '</strong> : ' . htmlspecialchars($datum['message']) . '</p>';
+        echo '<p><strong>' . htmlspecialchars($datum['nickname']) . '</strong> : ' . htmlspecialchars($datum['message']) . '</p>';
     }
 }
 
