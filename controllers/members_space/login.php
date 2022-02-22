@@ -40,5 +40,3 @@ if(!empty($_POST['nickname']) && !empty($_POST['pwd'])){
         }
     }
 }
-
-echo '<br>Vous n\'avez pas de compte? <a href=\'./subscription.php\'>Inscrivez-vous ici.</a>';
