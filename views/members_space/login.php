@@ -2,11 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../../views/bootstrap/css/bootstrap.css">
-    <style>
-        .container{
-            margin-top: 12.5%;
-        }
-    </style>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +28,7 @@
                             <input class="form-control" type="password" name="pwd" placeholder="********">
                         </div>
                     </div><br>
-                    <div class="form-check">    
+                    <div class="form-check row align-items-center">    
                         <input type="checkbox" class="form-check-input" name="auto" id="auto" value="auto_login">
                         <label for="auto" class="form-check-label">Connexion automatique</label><br>
                     </div>

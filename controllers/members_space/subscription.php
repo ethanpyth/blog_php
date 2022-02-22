@@ -30,6 +30,6 @@ if (isset($_POST) && (!empty($_POST['nickname']) && !empty($_POST['pwd']) && !em
     } else {
         echo '<p> Veuillez entrer le meme mot de passe dans les deux champs de mot de passe</p>';
     }
-}elseif(empty($_POST['nickname']) || empty($_POST['pwd']) || empty($_POST['pwd1']) || empty($_POS['email'])){
+}elseif(empty($_POST['nickname']) || empty($_POST['pwd']) || empty($_POST['pwd1']) || empty($_POST['email'])){
     echo '<p> Veuillez remplir tous les champs</p>';
 }
