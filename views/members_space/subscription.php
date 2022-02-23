@@ -44,6 +44,7 @@
                 <input type="hidden" name="page_from" value="subscription">
                 <input type="submit" class="btn btn-primary">
             </form>
+            <p>Avez-vous déjà un compte? Connectez-vous <a href="../../controllers/members_space/login.php">ici</a>.</p>
         </div>
     </div>
 </body>
