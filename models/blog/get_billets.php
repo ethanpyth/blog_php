@@ -34,6 +34,13 @@ function get_commentaires($id_billet): array|bool
     }
 }
 
+//function data_user($nickname){
+//    global $bdd;
+//
+//    $req = $bdd->prepare('SELECT nickname FROM members');
+//
+//}
+
 //ajouter les commentaires
 function add_comments($author, $id_billet, $comment): bool
 {

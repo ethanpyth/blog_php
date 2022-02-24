@@ -22,15 +22,19 @@
 </div>
 <h2>Commentaires</h2>
 <?php
-    for($index = 0; $index < count($comments) - 1; $index++)
-    {
-        ?>
-        <p><strong><?php echo (htmlspecialchars($comments[$index]['auteur']) == $_SESSION['nickname']) ? '<em>' . $_SESSION['nickname'] . '</em>':  htmlspecialchars($comments[$index]['auteur']) ; ?></strong> <?php echo 'le ' . $comments[$index]['date_commentaire_fr']; ?></p>
-        <p><?php echo nl2br(htmlspecialchars($comments[$index]['commentaire'])); ?></p>
-        <hr>
-        <?php
+    if (empty($comments)){
+        echo '<p> Aucun commentaire</p>';
+    }else{
+        for($index = 0; $index < count($comments) - 1; $index++)
+        {
+            ?>
+            <p><strong><?php echo (htmlspecialchars($comments[$index]['auteur']) == $_SESSION['nickname']) ? '<em>' . $_SESSION['nickname'] . '</em>':  htmlspecialchars($comments[$index]['auteur']) ; ?></strong> <?php echo 'le ' . $comments[$index]['date_commentaire_fr']; ?></p>
+            <p><?php echo nl2br(htmlspecialchars($comments[$index]['commentaire'])); ?></p>
+            <hr>
+            <?php
+        }
+        // Fin de la boucle des commentaires
     }
-    // Fin de la boucle des commentaires
     ?>
     <form class="news" method="post" action="../../controllers/blog/commentaires.php?billet=<?php echo $_GET['billet']; ?>">
         <div>
