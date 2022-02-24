@@ -11,7 +11,7 @@
 <form action="../../controllers/minichat/index.php" method="post">
     <div>
         <label>
-            Pseudo : <input type="text" name="nickname" <?php echo (); ?>>
+            Pseudo : <input type="text" name="nickname" value="<?php echo (!empty($_SESSION['nickname'])) ? $_SESSION['nickname'] : ''; ?>">
         </label>
     </div><br>
     <div>
