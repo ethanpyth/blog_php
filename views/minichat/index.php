@@ -11,7 +11,7 @@
 <form action="../../controllers/minichat/index.php" method="post">
     <div>
         <label>
-            Pseudo : <input type="text" name="pseudo">
+            Pseudo : <input type="text" name="nickname" <?php echo (); ?>>
         </label>
     </div><br>
     <div>

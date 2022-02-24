@@ -7,7 +7,7 @@ include_once('../../views/members_space/login.php');
 
 
 // verifie les champs de la page de login sont tous remplis
-if(!empty($_POST['nickname']) && !empty($_POST['pwd'])){
+if(empty($_POST['nickname']) && empty($_POST['pwd'])){
     include_once('../../views/members_space/login.php');
     echo '<br>Veuillez compléter tous les champs.<br>';
 }else{

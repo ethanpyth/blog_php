@@ -5,6 +5,7 @@
     <style>
         .container{
             margin-top: 12.5%;
+            margin-bottom: 12.5%;
         }
     </style>
     <meta charset="UTF-8">
@@ -19,29 +20,29 @@
                 <h1 class="text-center">SE CONNECTER</h1>
             </div>
             <div class="col-lg bg-opacity-50 bg-gradient">
-                <form class="form" action="../../controllers/members_space/login.php" method="post">
+                <form action="../../controllers/members_space/login.php" method="post">
                     <div class="mb-3 row">
-                        <label for="pseudo" class="col-sm-4 form-label">Pseudonyme : </label>    
-                        <div class="col-sm-8">
+                        <label for="pseudo" class="col-sm-3 form-label">Pseudonyme : </label>    
+                        <div class="col-sm-9">
                             <input class="form-control" type="text" id="pseudo" name="nickname" placeholder="xyz">
                         </div>
-                    </div><br>
+                    </div>
                     <div class="mb-3 row">
-                        <label for="pwd" class="text-left col-sm-4 form-label">Mot de passe : </label>
-                        <div class="col-sm-8">
-                            <input class="form-control" type="password" name="pwd" placeholder="********">
+                        <label for="pass" class="text-left col-sm-3 form-label">Mot de passe : </label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="pass" type="password" name="pwd" placeholder="********">
                         </div>
-                    </div><br>
+                    </div>
                     <div class="mb-3 form-check row">  
-                        <div class="col-sm-2">
+                        <div class="col-sm-1">
                             <input type="checkbox" class="form-check-input" name="auto" id="auto" value="auto_login">
                         </div>  
-                        <label for="auto" class="col-sm-6 form-check-label">Connexion automatique</label><br>
-                    </div><br>
-                    <p class="text-center">Vous n'avez pas de compte? Inscrivez-vous <a href="../../controllers/members_space/subscription.php">ici</a></p>
-                    <input type="hidden" name="page_from" value="login"><br>
-                    <div class="row align-items-center">
-                        <input class="btn btn-primary col-sm-6 " type="submit" value="Submit">
+                        <label for="auto" class="col-sm-4 form-check-label">Connexion automatique |</label>
+                        <p class="col-sm-7">Vous n'avez pas de compte? Inscrivez-vous <a href="../../controllers/members_space/subscription.php">ici</a></p>
+                    </div>
+                    <input type="hidden" name="page_from" value="login">
+                    <div class="align-self-center">
+                        <input class="btn btn-primary col-sm-6 offset-3" type="submit" value="Submit">
                     </div>
                 </form>
             </div>

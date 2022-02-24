@@ -19,12 +19,12 @@ if (empty($data)){
 }
 
 //vérifie si la session n'est pas vide
-if (!empty($_SESSION['nickname'])){
-    if (!empty($_POST['pseudo']) && !empty($_POST['message'])){
+if (empty($_SESSION['nickname'])){
+    header('Location: ../members_space/login.php');
+}else{
+    if (empty($_POST['pseudo']) && !empty($_POST['message'])){
         add_message($_POST['pseudo'], $_POST['message']);
     }else{
         echo ' Veuillez remplir tous les champs';
     }
-}else{
-    header('Location: ../members_space/login.php');
 }
