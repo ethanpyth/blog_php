@@ -8,6 +8,6 @@
 </head>
 <body>
     <h1>Profil de <?php echo $_SESSION['nickname']; ?> </h1>
-    
+
 </body>
 </html>

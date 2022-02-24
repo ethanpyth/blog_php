@@ -9,5 +9,4 @@ include_once('../billets.php');
 $billets = get_billets(0, 5);
 give_billet();
 
-(isset($_SESSION) && !empty($_SESSION['nickname'])) ?  include_once('../../views/blog/index.php') :
-   header('Location: ../members_space/login.php');
+include_once('../../views/blog/index.php');
