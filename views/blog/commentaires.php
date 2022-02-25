@@ -21,6 +21,7 @@
     </p>
 </div>
 <h2>Commentaires</h2>
+<hr>
 <?php
     if (empty($comments)){
         echo '<p> Aucun commentaire</p>';
