@@ -11,6 +11,13 @@
 </head>
 <body>
 <h1 class="text-center">Minichat</h1>
+<?php
+    for($i = 0; $i < count($data); $i++){
+        ?>
+        <p><strong><?php echo $data[$i]['nickname']; ?></strong> : <?php echo $data[$i]['message']; ?></p>
+        <?php
+    }
+?>
 <form class="col-12 row g-3 justify-content-center align-items-end" action="../../controllers/minichat/index.php" method="post">
     <div class="col">
         <label for="nickname" class="visually-hidden">

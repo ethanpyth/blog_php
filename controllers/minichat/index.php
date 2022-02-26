@@ -7,12 +7,12 @@ include_once('../../models/minichat/db_operation.php');
 
 $data = message();
 
+include_once('../../views/minichat/index.php');   
 //vérifie si la table n'est pas vide
 if (empty($data)){
     echo 'Chat vide';
 }else{
     //affichage des données de la table
-    include_once('../../views/minichat/index.php');   
 }
 
 //vérifie si la session n'est pas vide
