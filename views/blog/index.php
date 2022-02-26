@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../../views/blog/style.css">
     </head>
     <body>
-        <h1>Mon super Blog !</h1>
+        <h1>FORSYTHE BLOG</h1>
         <h4> <?php echo (!empty($_SESSION['nickname'])) ? 'Bienvenu à vous Mr./Mme. ' . ucfirst($_SESSION['nickname']) : null; ?></h4>
         <p>Derniers billets du blog :</p>
         <?php
@@ -26,7 +26,7 @@
                     <hr>
                 </div>
         <?php
-        }
+            }
         ?>
     </body>
 </html>

@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
     <style>
-        form{
-            display: flex;
-        }
     </style>
     <link rel="stylesheet" href="../../views/bootstrap/css/bootstrap.css">
     <meta charset="UTF-8">
@@ -14,31 +11,20 @@
 </head>
 <body>
 <h1 class="text-center">Minichat</h1>
-<div class="row">
-<?php 
-    for($i = 0; $i < count($data) - 1; $i++){
-        ?>
-         <p><strong><?php echo htmlspecialchars($data[$i]['nickname']); ?> </strong> : <?php echo htmlspecialchars($data[$i]['message']); ?></p> -->
-        <?
-    }    
-?>
-</div>
-<form class="row g-3 align-items-end" action="../../controllers/minichat/index.php" method="post">
-    <div class="col-auto">
+<form class="col-12 row g-3 justify-content-center align-items-end" action="../../controllers/minichat/index.php" method="post">
+    <div class="col">
         <label for="nickname" class="visually-hidden">
             Pseudo :
         </label>
         <input readonly class="form-control-plaintext" type="text" id="nickname" name="nickname" value="<?php echo (!empty($_SESSION['nickname'])) ? $_SESSION['nickname'] : ''; ?>">
     </div>
-    <div class="col-auto">
-        <label class="visually-hidden" for="message"> foreach ($data as $datum){
-        echo '<p><strong>' . htmlspecialchars($datum['nickname']) . '</strong> : ' . htmlspecialchars($datum['message']) . '</p>';
-    }
+    <div class="col">
+        <label class="visually-hidden" for="message"> 
             Message :            
         </label>  
-        <textarea name="message" id="message" class="form-control" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
+        <textarea name="message" id="message" class="form-control" placeholder="Entrez votre message"></textarea>
     </div><br>
-    <div class="col-auto">
+    <div class="col">
         <input type="submit" class="btn btn-primary mb-3"value="Poster">
     </div>
 </form>
