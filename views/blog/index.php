@@ -8,7 +8,6 @@
     </head>
     <body>
         <h1>FORSYTHE BLOG</h1>
-        <h4> <?php echo (!empty($_SESSION['nickname'])) ? 'Bienvenu à vous Mr./Mme. ' . ucfirst($_SESSION['nickname']) : null; ?></h4>
         <p>Derniers billets du blog :</p>
         <?php
             for($index = 0; $index < count($billets); $index++)
