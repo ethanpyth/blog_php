@@ -9,11 +9,19 @@
     <body>
         <div class="row">
             <nav class="navbar navbar-inverse col-sm-2">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="../../controllers/blog/index.php">Accueil</a></li>
-                    <li><a href="../../controllers/minichat/index.php">Minichat</a></li>
-                    <li><a href=""></a></li>
-                    <li></li>
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../../controllers/blog/index.php">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../controllers/minichat/index.php">Minichat</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href=""></a>
+                    </li>
+                    <li>
+
+                    </li>
                 </ul>
             </nav>
         </div>
